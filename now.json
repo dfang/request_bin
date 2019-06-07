@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.go",
+      "use": "@now/go"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.go"
+    },
+    {
+      "src": "/get",
+      "dest": "/handler.go"
+    },
+    {
+      "src": "/post",
+      "dest": "/handler.go"
+    },
+    {
+      "src": "/put",
+      "dest": "/handler.go"
+    },
+    {
+      "src": "/delete",
+      "dest": "/handler.go"
+    }
+  ]
+}
